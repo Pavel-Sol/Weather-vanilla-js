@@ -4,6 +4,9 @@ start.addEventListener('click', currentWeatherRequest)
 
 function currentWeatherRequest() {
     let city = document.querySelector('.city').value
+    if (city == '') {
+        city = 'Saratov'
+    }
 
     let request = new XMLHttpRequest()
     request.open('GET', `https://api.openweathermap.org/data/2.5/weather?q=${city},ru&appid=38bd2a6dccee12ceb0fe1c7b9ecb81bd&lang=ru`)
@@ -14,6 +17,9 @@ function currentWeatherRequest() {
         if (request.readyState === 4 && request.status === 200) {
             let data = JSON.parse(request.responseText)
             viev(data)
+            document.querySelector('.warning').innerHTML = ''
+        } else {
+            document.querySelector('.warning').innerHTML = 'Произошла ошибка! Проверьте корректность названия введенного вами города'
         }
     })
 }
