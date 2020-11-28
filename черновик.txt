@@ -11,3 +11,7 @@ api.openweathermap.org/data/2.5/weather?q=London,uk&appid={API key}
 
 
 http://api.openweathermap.org/data/2.5/weather?q=Samara,ru&appid=38bd2a6dccee12ceb0fe1c7b9ecb81bd&lang=ru
+
+добавить проверку на пустой город,
+если ответ не пришел.
+переключение языка

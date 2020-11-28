@@ -114,7 +114,7 @@ ul li {
   align-items: flex-end;
   border: 2px solid rgb(8, 8, 216);
   border-radius: 15px;
-  padding: 20px 10px;
+  padding: 20px;
 }
 
 .city,
@@ -139,14 +139,27 @@ ul li {
   margin: 10px 0px 10px 15px;
   padding: 10px 40px;
   font-size: 16px;
+  text-transform: uppercase;
   color: #f5f4f4;
   background: linear-gradient(rgb(8, 8, 216), rgb(86, 86, 241));
 }
 
-
+/* ----------------- */
 .weather__today {
+  padding: 20px;
   color: #ffffff;
   background: linear-gradient(rgb(8, 8, 216), rgb(86, 86, 241));
   max-width: 500px;
   margin: 0px auto;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.weather__today__item {
+  margin: 10px 0px;
+}
+
+.city-out {
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
