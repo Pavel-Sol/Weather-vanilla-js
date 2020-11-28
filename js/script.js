@@ -1,10 +1,10 @@
 let start = document.querySelector('#start')
 
-start.addEventListener('click', discover)
+start.addEventListener('click', currentWeatherRequest)
 
-function discover() {
+function currentWeatherRequest() {
     let city = document.querySelector('.city').value
-    // console.log(city)
+
 
     let request = new XMLHttpRequest()
 

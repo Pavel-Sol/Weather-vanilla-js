@@ -34,6 +34,9 @@ body {
   height: 100%;
   font-size: 14px;
   line-height: 1;
+  font-family: Gilroy-500;
+  background: #f5f4f4;
+  color: rgb(37, 37, 37);
 }
 
 input,
@@ -60,6 +63,38 @@ ul li {
   padding: 0px;
 }
 
+/* ----------шрифты---------------- */
+
+@font-face {
+  font-family: 'Gilroy-400';
+  src: url('../fonts/Gilroy-Regular400.eot');
+  src: url('../fonts/Gilroy-Regular400.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Gilroy-Regular400.woff') format('woff'),
+    url('../fonts/Gilroy-Regular400.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy-500';
+  src: url('../fonts/Gilroy-Medium500.eot');
+  src: url('../fonts/Gilroy-Medium500.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Gilroy-Medium500.woff') format('woff'),
+    url('../fonts/Gilroy-Medium500.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy-700';
+  src: url('../fonts/Gilroy-Bold700.eot');
+  src: url('../fonts/Gilroy-Bold700.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Gilroy-Bold700.woff') format('woff'),
+    url('../fonts/Gilroy-Bold700.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* -------------------------- */
 .container {
   max-width: 1110px;
@@ -67,18 +102,51 @@ ul li {
   margin: 0px auto;
 }
 
-.weather__today {
-  background-color: aqua;
-  max-width: 600px;
-  margin: 0px auto;
+.weather__content {
+  padding: 50px 0px 50px 0px;
 }
 
+.location {
+  max-width: 500px;
+  margin: 0px auto 30px auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  border: 2px solid rgb(8, 8, 216);
+  border-radius: 15px;
+  padding: 20px 10px;
+}
+
+.city,
+.start {
+  min-height: 40px;
+  border-radius: 3px;
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.4), -2px -2px 7px rgba(0, 0, 0, 0.4);
+}
 
 .city {
   background-color: rgb(197, 219, 219);
+  border: 2px solid rgb(197, 219, 219);
+  padding: 0px 10px;
+  margin: 10px 15px 10px 0px;
+}
+
+.city:focus {
+  border: 2px solid rgb(8, 8, 216);
 }
 
 .start {
-  background-color: blue;
-  padding: 20px;
+  margin: 10px 0px 10px 15px;
+  padding: 10px 40px;
+  font-size: 16px;
+  color: #f5f4f4;
+  background: linear-gradient(rgb(8, 8, 216), rgb(86, 86, 241));
+}
+
+
+.weather__today {
+  color: #ffffff;
+  background: linear-gradient(rgb(8, 8, 216), rgb(86, 86, 241));
+  max-width: 500px;
+  margin: 0px auto;
 }
