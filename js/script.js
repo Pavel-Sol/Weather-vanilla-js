@@ -6,7 +6,7 @@ function currentWeatherRequest() {
     let city = document.querySelector('.city').value
 
     let request = new XMLHttpRequest()
-    request.open('GET', `http://api.openweathermap.org/data/2.5/weather?q=${city},ru&appid=38bd2a6dccee12ceb0fe1c7b9ecb81bd&lang=ru`)
+    request.open('GET', `https://api.openweathermap.org/data/2.5/weather?q=${city},ru&appid=38bd2a6dccee12ceb0fe1c7b9ecb81bd&lang=ru`)
     request.send()
 
     request.addEventListener('readystatechange', function () {
