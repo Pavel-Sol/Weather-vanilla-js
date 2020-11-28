@@ -66,16 +66,6 @@ ul li {
 /* ----------шрифты---------------- */
 
 @font-face {
-  font-family: 'Gilroy-400';
-  src: url('../fonts/Gilroy-Regular400.eot');
-  src: url('../fonts/Gilroy-Regular400.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Gilroy-Regular400.woff') format('woff'),
-    url('../fonts/Gilroy-Regular400.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
   font-family: 'Gilroy-500';
   src: url('../fonts/Gilroy-Medium500.eot');
   src: url('../fonts/Gilroy-Medium500.eot?#iefix') format('embedded-opentype'),
@@ -85,15 +75,6 @@ ul li {
   font-style: normal;
 }
 
-@font-face {
-  font-family: 'Gilroy-700';
-  src: url('../fonts/Gilroy-Bold700.eot');
-  src: url('../fonts/Gilroy-Bold700.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Gilroy-Bold700.woff') format('woff'),
-    url('../fonts/Gilroy-Bold700.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
 
 /* -------------------------- */
 .container {

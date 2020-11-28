@@ -28,7 +28,6 @@ function currentWeatherRequest() {
 
 
 function viev(data) {
-    console.log(data)
     document.querySelector('.city-out').textContent = data.name
     document.querySelector('.temperature').innerHTML = `Температура: ${Math.round(data.main.temp - 273)}  &deg;`
     document.querySelector('.temperature__felt').innerHTML = `Ощущается как: ${Math.round(data.main.feels_like - 273)}  &deg;`
