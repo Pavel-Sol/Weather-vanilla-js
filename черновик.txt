@@ -1,0 +1,13 @@
+OpenWeatherMap
+пароль dg866SD5r
+почта pavelgorazio91@gmail.com
+имя pav555
+
+e758109b5efb9713709968f371fc57ec
+
+api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
+
+api.openweathermap.org/data/2.5/weather?q=London,uk&appid={API key}
+
+
+http://api.openweathermap.org/data/2.5/weather?q=Samara,ru&appid=38bd2a6dccee12ceb0fe1c7b9ecb81bd&lang=ru
